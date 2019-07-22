@@ -6,22 +6,29 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     </head>
-    <body>
-    <div class="dropdown">
+    <body>  
+      <div class="dropdown">
         <button class="dropbtn"><i class="fas fa-bars"></i></button>
         <div class="dropdown-content">
           <a href="">Team</a>
           <a href="">Gallery</a>
           <a href="contact.html">Contact</a>
         </div>
-    </div>
-    <a href="index.html"><h1>Virtual Vultures</h1></a>
-            <title>Feedback Form</title>
-            <h1>Feedback Form</h1>
+       </div>
+       <div id="banner">
+       <div>
+       <img src="VVJT_LOGO.jpg">
+       </div>
+       <div>
+       <h1><a href="index.html">Virtual Vultures</a></h1>
+       </div>
+       </div>
+        <div id="form">
+            <h2>Feedback Form</h2>
             <form method="post" action="send_mail.php">
             <p>
-            <label>First Name
-            <input type="text" name="first_name" required>
+            <label>Name
+            <input type="text" name="name" required>
             </label> 
             </p>
             <p>
@@ -30,11 +37,12 @@
             </label>
             </p>
             <p>
-            <label>Comments
-            <textarea name="comments" maxlength="500"></textarea>
+            <label>Message
+            <textarea name="message" maxlength="500"></textarea>
             </label>
             </p>
-            <p><button>Submit the form</button></p>
+            <input type="submit" value="Submit">
             </form>
+        </div>
     </body>  
 </html>  
