@@ -2,7 +2,6 @@ video{
   min-width: 100%;
   position: fixed;
   top:0;
-  
   z-index: -999;
 }
 body{
@@ -14,13 +13,14 @@ body{
   height: 550px;
   padding-bottom: 50px;
   padding-top: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3)
 }
 header{
     width: 100%;
     position: fixed;
     padding: 5px;
     background: black;
+    z-index: 999;
 }
 img{
   width: 75px;
@@ -38,7 +38,7 @@ img{
   background: rgb(22, 22, 22); 
 }
 .dropbtn {
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0);
   color: white;
   padding: 16px;
   font-size: 20pt;
@@ -51,7 +51,7 @@ img{
 }
 .dropdown-content {
   display: none;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0);
   min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   position: absolute;
@@ -77,12 +77,6 @@ h1{
   font-size: 32pt;
   margin: 0 0 0 20px;
   position: relative;
-}
-#about{
-  text-align: center;
-  padding: 20px;
-  color: white;
-  background-color: black;
 }
 p{
   font-size: 18pt;
@@ -115,4 +109,67 @@ footer{
 i{
   font-size: 22pt;
   color: white;
+  margin: 8px;
+  float:left;
+}
+
+a i:hover{
+  color: rgb(133, 0, 0);
+}
+#team { 
+  background-image: url("VVJT_LOGO.jpg");
+  background-size: contain;
+  height: 300px; 
+  background-color: black;
+  padding: 200px 150px;
+  text-align: center;
+  border: 25px solid black;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+h2{
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45pt;
+    background-color: rgba(18, 18, 24, 0.623);
+    padding: 10px;
+
+}
+#text{
+    background-color: black;
+    padding: 20px 200px;
+    text-align: center;
+}
+#aircraft{
+  background-image: url("l39.jpg");
+  background-size: cover;
+  height: 300px; 
+  background-color: black;
+  padding: 200px 150px;
+  text-align: center;
+  border: 20px solid black;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+#show{
+  background-image: url("bananaPass.jpg");
+  background-size: cover;
+  height: 300px; 
+  background-color: black;
+  padding: 200px 150px;
+  text-align: center;
+  border: 20px solid black;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
