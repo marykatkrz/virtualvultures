@@ -7,7 +7,7 @@ video{
 }
 body{
   margin: 0;
-  background-color: black;
+  background-color: rgb(10, 10, 10);
   color: white;
   scroll-behavior: smooth;
 }
@@ -22,22 +22,21 @@ header{
     position: fixed;
     padding: 5px;
     background: black;
+    top: 0;
     z-index: 999;
 }
 img{
   width: 75px;
   height: auto;
 }
-#images{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 20px;
-}
 
+#images{
+  text-align: center;
+  margin-top: 200px;
+}
 #images img{
   width: 28%;
-  height: auto;
+  height: 200px;
   border: 2px solid black;
 }
 #images img:hover{
@@ -117,10 +116,11 @@ h1 a:hover{
 #form{
   border: 2px solid grey;
   border-radius: 8pt;
-  padding: 100px;
+  padding: 50px;
   display: block;
   text-align: center;
-  margin: 10px 150px;
+  margin: 200px 200px;
+  background-color: black;
 }
 form{
   display: inline-block;
@@ -140,6 +140,7 @@ i{
 
 a i:hover{
   color: rgb(133, 0, 0);
+  cursor: pointer;
 }
 #team { 
   background-image: url("VVJT_LOGO.jpg");
@@ -197,4 +198,27 @@ h2{
   background-repeat: no-repeat;
   padding-bottom: 50px;
   padding-top: 50px;
+}
+input{
+  width: 100%;
+}
+
+textarea{
+  width: 100%;
+  height: 200px;
+}
+button{
+  border-radius: 8pt;
+  background-color: white;
+  border: 2px solid rgb(133, 0, 0);
+  font-size: 14pt;
+  padding: 5px;
+}
+button:hover{
+  background-color: rgb(133, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+h3{
+  font-size: 18pt;
 }
