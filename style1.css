@@ -1,4 +1,3 @@
-
 video{
   min-width: 100%;
   position: fixed;
@@ -9,7 +8,9 @@ body{
   margin: 0;
   background-color: rgb(10, 10, 10);
   color: white;
-  scroll-behavior: smooth;
+}
+label{
+  font-size: 14pt;
 }
 #video{
   height: 550px;
@@ -29,7 +30,6 @@ img{
   width: 75px;
   height: auto;
 }
-
 #images{
   text-align: center;
   margin-top: 200px;
@@ -40,17 +40,15 @@ img{
   border: 2px solid black;
 }
 #images img:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.5s;
 }
 ::-webkit-scrollbar {
     width: 10px;
-
   }
 ::-webkit-scrollbar-track {
   background: #ffffff; 
 }
-
 ::-webkit-scrollbar-thumb {
   background: rgb(22, 22, 22); 
 }
@@ -63,8 +61,7 @@ img{
   margin: 15px;
 }
 .dropdown {
-    float: right;
- 
+    float: right;   
 }
 .dropdown-content {
   display: none;
@@ -73,9 +70,8 @@ img{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   position: absolute;
   z-index: 100;
-  right: 0;
+  right: 0;  
 }
-
 .dropdown-content a {
   color: white;
   padding: 20px 50px;
@@ -83,29 +79,23 @@ img{
   text-decoration: none;
   display: block;
 }
-
 .dropdown-content a:hover {color: rgb(133, 0, 0)}
-
 .dropdown:hover .dropdown-content {display: block;}
-
 .dropdown:hover .dropbtn {background-color: #424242;}
 h1{
   font-family: 'Poiret One', cursive;
   font-size: 32pt;
 }
-p{
+#text p{
   font-size: 18pt;
-  
 }
 h1 a{
   text-decoration: none;
   color: white;
-
 }
 h1 a:hover{
   color: rgb(133, 0, 0)
 }
-
 #banner{
   display: flex;
   justify-content: center;
@@ -116,15 +106,15 @@ h1 a:hover{
 #form{
   border: 2px solid grey;
   border-radius: 8pt;
-  padding: 50px;
+  padding: 30px;
   display: block;
   text-align: center;
-  margin: 200px 200px;
-  background-color: black;
+  margin: 150px 300px;
+  background: linear-gradient(to bottom, #690202 0%, #272121 100%);
 }
 form{
   display: inline-block;
-  text-align: left
+  text-align: left;
 }
 footer{
   background-color: black;
@@ -137,19 +127,19 @@ i{
   margin: 6px;
   float:left;
 }
-
 a i:hover{
   color: rgb(133, 0, 0);
   cursor: pointer;
 }
 #team { 
   background-image: url("VVJT_LOGO.jpg");
-  background-size: contain;
+  background-size: 375px;
   height: 300px; 
   background-color: black;
   padding: 200px 150px;
   text-align: center;
-  border: 25px solid black;
+  border: 20px solid black;
+  border-top: 10px solid black;
   background-attachment: fixed;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -164,7 +154,6 @@ h2{
     font-size: 45pt;
     background-color: rgba(18, 18, 24, 0.623);
     padding: 10px;
-
 }
 #text{
     background-color: black;
@@ -201,24 +190,89 @@ h2{
 }
 input{
   width: 100%;
+  margin: 10px;
 }
-
 textarea{
   width: 100%;
   height: 200px;
+  margin: 10px;
 }
 button{
   border-radius: 8pt;
   background-color: white;
-  border: 2px solid rgb(133, 0, 0);
+  border: 2px solid rgb(10, 10, 10);
   font-size: 14pt;
   padding: 5px;
+  margin: 0 0 30px 10px; 
 }
 button:hover{
-  background-color: rgb(133, 0, 0);
+  background-color: rgb(10, 10, 10);
   color: white;
   cursor: pointer;
 }
 h3{
+  font-size: 30pt;
+  text-align: center;  
+}
+#about{
+  margin: 300px 150px;
+}
+.flex{
+  display: flex;
+  border-bottom: 2px solid grey;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+}
+#about img{
+  width: auto;
+  height: 275px;
+  margin: 20px; 
+}
+.intro-text{
+  width: 300;
+  margin: 20px;
+  text-align: center;
+  font-size: 14pt;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s all ease-in;
+}
+.intro-text a{
+  color: white;
+}
+.intro-text a:hover{
+  color: rgb(133, 0, 0);
+}
+
+.intro-appear{
+  opacity: 1;
+  transform: translateY(0px);
+}
+h4{
   font-size: 18pt;
+}
+h5{
+  font-size: 16pt;
+}
+li{
+  list-style: none;
+  padding: 5px;
+}
+.flex-3{
+  display: flex;
+  justify-content: space-between;
+}
+form em{
+  margin: 30px;
+  font-size: 14pt;
+  text-align: center;
+}
+form em a{
+  color:white;
+}
+form em a:hover{
+  color:black;
 }
