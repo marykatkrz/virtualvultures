@@ -8,6 +8,7 @@ body{
   margin: 0;
   background-color: rgb(10, 10, 10);
   color: white;
+
 }
 label{
   font-size: 14pt;
@@ -25,9 +26,10 @@ header{
     background: black;
     top: 0;
     z-index: 999;
+    text-align: center;
 }
 img{
-  width: 75px;
+  width: 50px;
   height: auto;
 }
 #images{
@@ -40,8 +42,9 @@ img{
   border: 2px solid black;
 }
 #images img:hover{
-  transform: scale(1.1);
-  transition: 0.5s;
+  transform: scale(1.05);
+  transition: 0.6s;
+  
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -59,18 +62,19 @@ img{
   font-size: 16pt;
   border: none;
   margin: 15px;
+ 
 }
 .dropdown {
-    float: right;   
+  float: right;     
 }
 .dropdown-content {
   display: none;
   background-color: rgba(0, 0, 0);
   min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   position: absolute;
   z-index: 100;
   right: 0;  
+  text-align: right;
 }
 .dropdown-content a {
   color: white;
@@ -84,7 +88,8 @@ img{
 .dropdown:hover .dropbtn {background-color: #424242;}
 h1{
   font-family: 'Poiret One', cursive;
-  font-size: 32pt;
+  font-size: 16pt;
+  
 }
 #text p{
   font-size: 18pt;
@@ -101,7 +106,10 @@ h1 a:hover{
   justify-content: center;
   align-items: center;
   padding: 5px;
-  margin: 0 0 0 20px;
+}
+#head{
+  display: flex;
+  justify-content: space-between;
 }
 #form{
   border: 2px solid grey;
@@ -109,23 +117,43 @@ h1 a:hover{
   padding: 30px;
   display: block;
   text-align: center;
-  margin: 150px 300px;
+  margin: 200px 20px;
   background: linear-gradient(to bottom, #690202 0%, #272121 100%);
+}
+#form p{
+  font-size: 14pt;
 }
 form{
   display: inline-block;
   text-align: left;
+}
+#logo{
+  margin: 10px;
+}
+#other{
+  margin: 200px 20px;
+  text-align:  center;
+}
+.dropdown img{
+  height: auto;
+  width: 150px;
 }
 footer{
   background-color: black;
   color: white;
   padding: 50px;
 }
+#links{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+}
 i{
-  font-size: 18pt;
+  font-size: 20pt;
   color: white;
   margin: 6px;
-  float:left;
+
 }
 a i:hover{
   color: rgb(133, 0, 0);
@@ -134,17 +162,16 @@ a i:hover{
 #team { 
   background-image: url("VVJT_LOGO.jpg");
   background-size: 375px;
-  height: 300px; 
-  background-color: black;
+  height: 300px;
   padding: 200px 150px;
   text-align: center;
-  border: 20px solid black;
-  border-top: 10px solid black;
+  border-top: 20px solid black;
   background-attachment: fixed;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding-bottom: 50px;
   padding-top: 50px;
+  background-color: black;
 }
 h2{
     position: relative;
@@ -156,18 +183,17 @@ h2{
     padding: 10px;
 }
 #text{
-    background-color: black;
     padding: 20px 200px;
     text-align: center;
+    background-color: rgb(10, 10, 10);
 }
 #aircraft{
   background-image: url("l39.jpg");
   background-size: cover;
   height: 300px; 
-  background-color: black;
+  background-color: rgb(10, 10, 10);
   padding: 200px 150px;
   text-align: center;
-  border: 20px solid black;
   background-attachment: fixed;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -178,10 +204,8 @@ h2{
   background-image: url("bananaPass.jpg");
   background-size: cover;
   height: 300px; 
-  background-color: black;
   padding: 200px 150px;
   text-align: center;
-  border: 20px solid black;
   background-attachment: fixed;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -211,34 +235,34 @@ button:hover{
   cursor: pointer;
 }
 h3{
-  font-size: 30pt;
-  text-align: center;  
+  font-size: 20pt;
+  text-align: center; 
+  margin: 10px; 
 }
 #about{
-  margin: 300px 150px;
+  margin-top: 200px;
 }
 .flex{
+  border-bottom: 1px solid rgb(71, 71, 71);
   display: flex;
-  border-bottom: 2px solid grey;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 20px;
-
+  justify-content: center;
+  margin: 10px;
 }
 #about img{
   width: auto;
-  height: 275px;
+  height: 11rem;
   margin: 20px; 
 }
 .intro-text{
-  width: 300;
-  margin: 20px;
   text-align: center;
   font-size: 14pt;
   padding: 20px;
   opacity: 0;
   transform: translateY(20px);
-  transition: 1s all ease-in;
+  transition: 1s all ease-in; 
+  position: initial
 }
 .intro-text a{
   color: white;
@@ -253,6 +277,22 @@ h3{
 }
 h4{
   font-size: 18pt;
+}
+@keyframes left{
+  0%   { transform: translate( -200%, 0); }
+  100% { transform: translate( 0%, 0); }
+}
+@keyframes right{
+  0%   { transform: translate( 200%, 0); }
+  100% { transform: translate( 0%, 0); }
+}
+#thunder{
+  animation-name: right;
+  animation-duration: 1.2s;
+}
+#blue{
+  animation-name: left;
+  animation-duration: 1.2s;
 }
 h5{
   font-size: 16pt;
@@ -274,5 +314,42 @@ form em a{
   color:white;
 }
 form em a:hover{
-  color:black;
+  color: rgb(133, 0, 0);
+}
+footer{
+  text-align: center;
+  padding: 20px;
+  background-color: inherit;
+}
+@media (min-width: 1025px){
+  .flex{
+    flex-direction: row;
+    padding: 20px;
+  
+  }
+  h1{
+    font-size: 32pt;
+  }
+  #about{
+    margin: 200px 150px;
+  }
+  .intro-text{
+    width: 300;
+    margin: 20px;
+  }
+  #about img{
+    height: 275px;
+  }
+  #other{
+    margin: 200px 150px;
+  }
+  h3{
+    font-size: 32pt;
+  }
+  #form{
+    margin: 200px 300px;
+  }
+  img{
+    width: 75px;
+  }
 }
